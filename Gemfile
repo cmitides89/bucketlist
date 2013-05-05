@@ -20,6 +20,10 @@ group :assets do
 end
 
 gem 'jquery-rails'
+gem 'pry'
+gem 'geocoder'
+gem 'pry'
+gem 'jquery-ui-rails'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'

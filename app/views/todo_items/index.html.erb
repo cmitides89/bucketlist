@@ -1,0 +1,14 @@
+<div class="items">
+	<ol id="sortable">
+		<% @items.each do |item| %>
+		<li>
+			<%= render item %>
+		</li>
+		<% end %>
+	</ol>
+</div>
+<div id="map-canvas"></div>
+
+<div class="items-form">
+	<%= render :partial => 'todo_items/form' %>
+</div>

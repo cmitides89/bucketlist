@@ -1,0 +1,15 @@
+<div class="new-comment">
+	<h5> new comment</h5>
+</div>
+<%= form_for Comment.new(:todo_item_id => item.id), :remote => true do |f| %>
+
+	<%= f.hidden_field :todo_item_id %>
+
+	<div class="field">
+		<%= f.label :body %><br />
+		<%= f.text_area :body %>
+	</div>
+	<div class="actions">
+		<%= f.submit %>
+	</div>
+<% end %>

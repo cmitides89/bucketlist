@@ -1,0 +1,10 @@
+<div class="new-form">
+	<h3>New Todo Item</h3>
+</div>
+<%= form_for TodoItem.new, :remote => true do |f| %>
+	<div class="field">
+		<%= f.label :name %>
+		<%= f.text_field :name %>
+	</div>
+	<%= f.submit %>
+<% end %>
